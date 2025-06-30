@@ -1,12 +1,9 @@
 import java.util.Scanner;
-import SistemaFacade; // Adicione esta linha
-import ScannerSingleton; // Adicione esta linha (se ScannerSingleton for uma classe personalizada)
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner scanner = ScannerSingleton.getInstance();
-        SistemaFacade facade = new SistemaFacade();
+        SistemaNotasFacade facade = new SistemaNotasFacade();
 
         int opcao;
         do {

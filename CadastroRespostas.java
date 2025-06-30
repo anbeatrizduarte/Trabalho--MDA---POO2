@@ -86,6 +86,7 @@ public class CadastroRespostas extends Base {
 
         gerenciadorResultados.calcularNotasAlunos(listaAlunos, gabarito);
         
+        // Uso do Factory para obter as estratégias de ordenação
         OrdenacaoStrategy ordenacaoAlfabetica = OrdenacaoStrategyFactory.getStrategy("alfabetica");
         ordenacaoAlfabetica.ordenarEsalvar(nomeDisciplina, listaAlunos);
 
